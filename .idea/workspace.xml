@@ -7,27 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43c012b3-28fa-4cd9-8f20-775ef803ffeb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/franco/Bean/UserBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/response.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AppDesignUsingDB/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AppDesignUsingDB/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/franco/controller/RecievingServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/franco/controller/RecievingServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/AddRecievings.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/AddRecievings.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AddRecievings.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AddRecievings.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/franco/controller/RecievingServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/franco/controller/RecievingServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jQuery 3.4.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/shopify.web.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopify.web.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopify.web/AddRecievings.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopify.web/AddRecievings.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopify.web/WEB-INF/classes/AddRecievings.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopify.web/WEB-INF/classes/AddRecievings.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopify.web/WEB-INF/classes/com/franco/controller/RecievingServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopify.web/WEB-INF/classes/com/franco/controller/RecievingServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopify.web/WEB-INF/classes/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopify.web/WEB-INF/classes/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopify.web/WEB-INF/classes/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopify.web/WEB-INF/classes/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopify.web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopify.web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopify.web/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopify.web/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopify.web/WEB-INF/classes/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopify.web/WEB-INF/classes/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopify.web/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopify.web/js/main.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -60,6 +46,15 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/addCustomer.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="50" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/addProduct.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -77,54 +72,6 @@
               <folding>
                 <element signature="n#style#0;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/addSale.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="503">
-              <caret line="46" selection-start-line="46" selection-end-line="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/home.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1470">
-              <caret line="98" column="110" selection-start-line="98" selection-start-column="110" selection-end-line="98" selection-end-column="110" />
-              <folding>
-                <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/franco/Bean/UserBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-              <folding>
-                <element signature="e#247#248#0" expanded="true" />
-                <element signature="e#295#296#0" expanded="true" />
-                <element signature="e#335#336#0" expanded="true" />
-                <element signature="e#370#371#0" expanded="true" />
-                <element signature="e#401#402#0" expanded="true" />
-                <element signature="e#449#450#0" expanded="true" />
-                <element signature="e#489#490#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/response.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="43" lean-forward="true" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -177,7 +124,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/js/jQuery 3.4.1.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/franco/models/AddProduct.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/franco/controller/Login.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/main.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/AddCustomer.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/addCustomer.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/addSale.html" />
@@ -209,6 +155,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/AddRecievings.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/login.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/home.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/main.js" />
       </list>
     </option>
   </component>
@@ -307,6 +254,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shopifyweb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shopifyweb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -437,7 +392,7 @@
       <workItem from="1566878012400" duration="27458000" />
       <workItem from="1566908108930" duration="12039000" />
       <workItem from="1566964612268" duration="20266000" />
-      <workItem from="1567051296989" duration="5927000" />
+      <workItem from="1567051296989" duration="6242000" />
     </task>
     <task id="LOCAL-00001" summary="A java 2EE web app using JBOSS(wildfly)">
       <created>1566991711727</created>
@@ -446,11 +401,18 @@
       <option name="project" value="LOCAL" />
       <updated>1566991711727</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Managed user authentication using mysql">
+      <created>1567057759918</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1567057759918</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84483000" />
+    <option name="totallyTimeSpent" value="84798000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="743" extended-state="6" />
@@ -466,7 +428,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2801303" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3615635" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -495,52 +457,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="A java 2EE web app using JBOSS(wildfly)" />
-    <option name="LAST_COMMIT_MESSAGE" value="A java 2EE web app using JBOSS(wildfly)" />
+    <MESSAGE value="Managed user authentication using mysql" />
+    <option name="LAST_COMMIT_MESSAGE" value="Managed user authentication using mysql" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/franco/models/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#3002#3003#0" expanded="true" />
-            <element signature="e#3055#3056#0" expanded="true" />
-            <element signature="e#3101#3102#0" expanded="true" />
-            <element signature="e#3137#3138#0" expanded="true" />
-            <element signature="e#3183#3184#0" expanded="true" />
-            <element signature="e#3225#3226#0" expanded="true" />
-            <element signature="e#3262#3263#0" expanded="true" />
-            <element signature="e#3299#3300#0" expanded="true" />
-            <element signature="e#3347#3348#0" expanded="true" />
-            <element signature="e#3391#3392#0" expanded="true" />
-            <element signature="e#3431#3432#0" expanded="true" />
-            <element signature="e#3471#3472#0" expanded="true" />
-            <element signature="e#3525#3526#0" expanded="true" />
-            <element signature="e#3575#3576#0" expanded="true" />
-            <element signature="e#3617#3618#0" expanded="true" />
-            <element signature="e#3659#3660#0" expanded="true" />
-            <element signature="e#3717#3718#0" expanded="true" />
-            <element signature="e#3771#3772#0" expanded="true" />
-            <element signature="e#3815#3816#0" expanded="true" />
-            <element signature="e#3859#3860#0" expanded="true" />
-            <element signature="e#3921#3922#0" expanded="true" />
-            <element signature="e#3979#3980#0" expanded="true" />
-            <element signature="e#4021#4022#0" expanded="true" />
-            <element signature="e#4063#4064#0" expanded="true" />
-            <element signature="e#4121#4122#0" expanded="true" />
-            <element signature="e#4175#4176#0" expanded="true" />
-            <element signature="e#4206#4207#0" expanded="true" />
-            <element signature="e#4239#4240#0" expanded="true" />
-            <element signature="e#4277#4278#0" expanded="true" />
-            <element signature="e#4313#4314#0" expanded="true" />
-            <element signature="e#4352#4353#0" expanded="true" />
-            <element signature="e#4391#4392#0" expanded="true" />
-            <element signature="e#4443#4444#0" expanded="true" />
-            <element signature="e#4491#4492#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/includes/footer.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="780">
@@ -556,40 +476,7 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/bootstrap.bundle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="87959" selection-start-line="1" selection-start-column="87959" selection-end-line="1" selection-end-column="87959" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/jQuery 3.4.1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="88059" selection-start-line="1" selection-start-column="88059" selection-end-line="1" selection-end-column="88059" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/franco/models/AddProduct.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -747,13 +634,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/me.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/franco/controller/CreateBookServlet.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/addCustomer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="50" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/franco/Bean/CustomerBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1440">
@@ -847,16 +727,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="166" column="8" selection-start-line="166" selection-start-column="8" selection-end-line="166" selection-end-column="8" />
-          <folding>
-            <element signature="n#style#0;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/deleteCustomer.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="93">
@@ -878,16 +748,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/home.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1470">
-          <caret line="98" column="110" selection-start-line="98" selection-start-column="110" selection-end-line="98" selection-end-column="110" />
-          <folding>
-            <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/franco/controller/Login.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -902,6 +762,52 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
           <caret line="28" column="32" lean-forward="true" selection-start-column="4" selection-end-line="44" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/jQuery 3.4.1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="88059" selection-start-line="1" selection-start-column="88059" selection-end-line="1" selection-end-column="88059" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="87959" selection-start-line="1" selection-start-column="87959" selection-end-line="1" selection-end-column="87959" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/bootstrap.bundle.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/response.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -921,10 +827,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/response.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1470">
+          <caret line="98" column="110" selection-start-line="98" selection-start-column="110" selection-end-line="98" selection-end-column="110" />
+          <folding>
+            <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="166" column="8" selection-start-line="166" selection-start-column="8" selection-end-line="166" selection-end-column="8" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/addCustomer.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" column="43" lean-forward="true" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+          <caret line="16" column="50" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="50" />
         </state>
       </provider>
     </entry>
