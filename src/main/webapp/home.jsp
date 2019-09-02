@@ -9,15 +9,22 @@
 <html>
 <head>
     <title>Home</title>
+<%--    <link rel="stylesheet" href="./css/styles.css">--%>
+<%--    <link rel="stylesheet" href="./css/homejsp.css">--%>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!------ Include the above in your HEAD tag ---------->
 </head>
 <body>
+<%
+if (session.getAttribute("username") == null){
+    response.sendRedirect("index.jsp");
+}
 
+%>
 
-<nav class="navbar navbar-expand-lg fixed-top" id="up" style="background: #263238">
+<nav class="navbar navbar-expand-lg fixed-top" id="up" style="background: white">
     <a class="navbar-brand" href="#"><img src="https://systechafrica.com/wp-content/uploads/2017/12/logo-1.png"></a>
     <button class="navbar-toggler" type="button"
             data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +35,7 @@
         <ul class="navbar-nav ml-auto">
             <ul class="navbar-nav">
                 <li class="nav-item dropdown"  >
-                    <a class="nav-link " data-toggle="dropdown" href="#">Home</a>
+                    <a class="nav-link " data-toggle="dropdown" href="/shopify.web/home.jsp">Home</a>
                     <ul class="dropdown-menu">
                         <%--                        <li><a href="login.html">Login</a></li>--%>
                         <%--                        <li><a href="#">Register</a></li>--%>
@@ -36,44 +43,49 @@
                     </ul>
                 </li>
 
+<%--                <li class="nav-item dropdown"  >--%>
+<%--                    <a class="nav-link " data-toggle="dropdown" href="#">Products</a>--%>
+<%--                    <ul class="dropdown-menu">--%>
+<%--                        <li><a href="add-product">Add Product</a></li>--%>
+<%--                        <li><a href="#">View Products</a></li>--%>
+<%--                        <li><a href="update-product">Update Products</a></li>--%>
+<%--                        <li><a href="delete-product">Delete Product</a></li>--%>
+
+<%--                    </ul>--%>
+<%--                </li>--%>
+
                 <li class="nav-item dropdown"  >
-                    <a class="nav-link " data-toggle="dropdown" href="#">Products</a>
+                    <a class="nav-link " data-toggle="dropdown" href="all-products">Products</a>
+
+                </li>
+
+                <li class="nav-item dropdown"  >
+                    <a class="nav-link " data-toggle="dropdown" href="all-customers">Customers</a>
                     <ul class="dropdown-menu">
-                        <li><a href="addProduct.html">Add Product</a></li>
-                        <li><a href="#">View Products</a></li>
-                        <li><a href="updateProduct.html">Update Products</a></li>
-                        <li><a href="deleteProduct.jsp">Delete Product</a></li>
+<%--                        <li><a href="add-customer">Add Customers</a></li>--%>
+<%--                        <li><a href="#">View Customers</a></li>--%>
+<%--                        <li><a href="update-customer">Update Customer</a></li>--%>
+<%--                        <li><a href="delete-customer">Delete Customer</a></li>--%>
 
                     </ul>
                 </li>
 
                 <li class="nav-item dropdown"  >
-                    <a class="nav-link " data-toggle="dropdown" href="#">Customers</a>
+                    <a class="nav-link " data-toggle="dropdown" href="all-recievings">Receivings</a>
                     <ul class="dropdown-menu">
-                        <li><a href="addCustomer.html">Add Customers</a></li>
-                        <li><a href="#">View Customers</a></li>
-                        <li><a href="updateCustomer.jsp">Update Customer</a></li>
-                        <li><a href="deleteCustomer.jsp">Delete Customer</a></li>
+<%--                        <li><a href="add-recieving">Add Receivings</a></li>--%>
+<%--                        <li><a href="all-recievings">View Recievings</a></li>--%>
+<%--                        <li><a href="#">Delete Recievings</a></li>--%>
 
                     </ul>
                 </li>
 
                 <li class="nav-item dropdown"  >
-                    <a class="nav-link " data-toggle="dropdown" href="#">Receivings</a>
+                    <a class="nav-link " data-toggle="dropdown" href="all-sales">Sales</a>
                     <ul class="dropdown-menu">
-                        <li><a href="AddRecievings.html">Add Receivings</a></li>
-                        <li><a href="#">View Recievings</a></li>
-                        <li><a href="#">Delete Recievings</a></li>
-
-                    </ul>
-                </li>
-
-                <li class="nav-item dropdown"  >
-                    <a class="nav-link " data-toggle="dropdown" href="#">Sales</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="addSale.html">Add Sales</a></li>
-                        <li><a href="#">View Sales</a></li>
-                        <li><a href="#">Delete Sales</a></li>
+<%--                        <li><a href="add-sale">Add Sales</a></li>--%>
+<%--                        <li><a href="all-sales">View Sales</a></li>--%>
+<%--                        <li><a href="#">Delete Sales</a></li>--%>
 
                     </ul>
                 </li>
@@ -91,13 +103,13 @@
             <div class="col-lg-12">
                 <div class="text-center">
                     <h1 class="mt-5">SHOPIFY APPLICATION</h1>
-                    <p>Welcome,,
+                    <p>Welcome...
+                    <h1>${username} </h1>
                     </p>
-                    <p><jsp:useBean id="user" scope="session" class="com.franco.Bean.UserBean" />
-                        <jsp:setProperty name="user" property="*" />
-                    <h1>Hello, <jsp:getProperty name="user" property="username" />!</h1></p>
-                    <a href="index.jsp"><button class="btn btn-outline-success  mt-5">Update Name</button></a>
-                    <button class="btn btn-outline-primary  mt-5">Sign Up</button>
+
+                    <form action="logout">
+                    <button class="btn btn-outline-warning  mt-5">Logout</button>
+                    </form>
 
                 </div>
 
@@ -107,30 +119,28 @@
     </div>
 </section>
 
-<%--<section class="cuerpo mt-5">--%>
-<%--    <div class="container">--%>
-<%--        <div class="row">--%>
-<%--            <div class="col-md-12">--%>
-<%--                <h1 style="align-content: center">ABOUT US</h1>--%>
-<%--                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius magni, esse quod dolores veritatis facilis cum ratione aliquam fugit iure laudantium eaque atque eum cupiditate, labore necessitatibus repudiandae a molestiae.--%>
+<footer class="page-footer font-small blue pt-4">
 
+    <br><br><br><br><br><br><br><br>
 
-<%--            </div>--%>
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+        <a href="https://francissakwa89.github.io/"> Sakwa Francis</a>
+    </div>
+    <!-- Copyright -->
 
-<%--        </div>--%>
+</footer>
 
-<%--    </div>--%>
-
-<%--</section>--%>
 <script>
     $(window).scroll(function(){
         if( $(this).scrollTop()>50){
 
-            $('.navbar').css('background','#263238');
+            // $('.navbar').css('background','#263238');
 
         }
     });
 </script>
+
 
 <style>
     body{
@@ -244,6 +254,9 @@
     }
 
 
+
+
 </style>
+
 </body>
 </html>

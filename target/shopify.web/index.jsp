@@ -11,6 +11,7 @@
 <head>
     <title>Login</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/models.css">
     <link href ="./js/main.js"  rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -23,7 +24,7 @@
 <h1 style="text-align: center">Hello, Please login</h1>
 <div class="container">
 
-    <form action="response.jsp" method="post">
+    <form action="login" method="post">
 
         <div class="group">
             <input type="text" required name="username">
@@ -38,15 +39,18 @@
             <span class="bar"></span>
             <label>Password</label>
         </div>
-        <button class="btn btn-outline-dark" type="submit">Login</button>
+        <button class="btn btn-outline-dark" type="submit">Login</button><br><p>Don't have account </p>
+
     </form>
+    <a href="views/accounts/registerUser.html"><button class="btn btn-outline-primary" type="submit">Sign Up</button></a>
+
 
 
 
 </div>
 
 <style>
-    <style>
+
     * { box-sizing:border-box; }
 
     /* basic stylings ------------------------------------------ */
@@ -165,6 +169,5 @@
     }
 
 </style>
-
 </body>
 </html>

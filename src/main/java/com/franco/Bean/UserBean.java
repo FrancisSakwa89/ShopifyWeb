@@ -1,27 +1,61 @@
 package com.franco.Bean;
 
-public class UserBean {
-    public String username;
-    public String password;
+import com.franco.db.MysqlConnect;
+import com.franco.models.User;
 
-    public UserBean() {
-        username = "";
-        password = "";
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+public class UserBean implements BeanI<User> {
+
+    @Override
+    public boolean create(User user) throws SQLException {
+        String sql = "INSERT INTO users(name,password) VALUES(?,?)";
+        Connection conn = MysqlConnect.getDbCon().conn;
+        PreparedStatement ps = conn.prepareStatement(sql);
+        ps.setString(1, user.getUsername());
+        ps.setString(2, user.getPassword());
+
+        return ps.executeUpdate() > 0;
     }
 
-    public String getUsername() {
-        return username;
+    @Override
+    public User read(int id) throws SQLException {
+        String sql = "SELECT * FROM users WHERE userId=" + id;
+        ResultSet rs = MysqlConnect.getDbCon().executeQuery(sql);
+        User user = new User("","");
+        if (rs.next()) {
+            user.setUsername(rs.getString("name"));
+            user.setPassword(rs.getString("password"));
+        }
+
+        return user;
+
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+
+    public User readByName(String name) throws SQLException {
+        String sql = "SELECT * FROM users WHERE name='" + name+"'";
+        ResultSet rs = MysqlConnect.getDbCon().executeQuery(sql);
+        User user = new User("","");
+        if (rs.next()) {
+            user.setUsername(rs.getString("name"));
+            user.setPassword(rs.getString("password"));
+        }
+
+        return user;
+
     }
 
-    public String getPassword() {
-        return password;
+    @Override
+    public boolean update(User user) throws SQLException {
+        return false;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    @Override
+    public boolean delete(User user) throws SQLException {
+        return false;
     }
 }

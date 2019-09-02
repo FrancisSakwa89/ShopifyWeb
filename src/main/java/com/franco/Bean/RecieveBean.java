@@ -33,7 +33,7 @@ public class RecieveBean implements BeanI<Recievings> {
 
     @Override
     public Recievings read(int id) throws SQLException {
-        String sql ="SELECT * FROM recieving WHERE RecieveId="+id;
+        String sql ="SELECT * FROM recieving WHERE id="+id;
         ResultSet rs = MysqlConnect.getDbCon().executeQuery(sql);
         Recievings recievings = new Recievings();
         if (rs.next()){
@@ -80,7 +80,7 @@ public class RecieveBean implements BeanI<Recievings> {
 
     }
     public boolean isProductExists(int id) throws SQLException {
-        String sql = "SELECT count(*) as 'count' FROM recieving where id="+id;
+        String sql = "SELECT count(*) as 'count' FROM product where id="+id;
         ResultSet rs = MysqlConnect.getDbCon().executeQuery(sql);
         if (rs.next()){
             if (rs.getInt("count") > 0){
