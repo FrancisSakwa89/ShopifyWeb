@@ -137,6 +137,7 @@ if (session.getAttribute("username") == null){
 
             // $('.navbar').css('background','#263238');
 
+
         }
     });
 </script>

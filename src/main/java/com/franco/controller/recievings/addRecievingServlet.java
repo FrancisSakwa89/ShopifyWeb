@@ -1,6 +1,7 @@
 package com.franco.controller.recievings;
 
 import com.franco.Bean.RecieveBean;
+import com.franco.controller.baseServlet;
 import com.franco.models.Recievings;
 
 import javax.servlet.ServletException;
@@ -13,10 +14,11 @@ import java.sql.SQLException;
 import java.util.Date;
 
 @WebServlet(name = "add-recieving",urlPatterns = "/add-recieving")
-public class addRecievingServlet extends HttpServlet {
+public class addRecievingServlet extends baseServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
+        validate(req,resp);
         int batchNo = Integer.parseInt(req.getParameter("batch_no"));
         Date date = new Date();
         double selling_price = Integer.parseInt(req.getParameter("selling_price"));
@@ -39,6 +41,7 @@ public class addRecievingServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        validate(req,resp);
         req.getRequestDispatcher("/includes/navbar.jsp").include(req,resp);
         req.getRequestDispatcher("/views/recievings/addRecievings.jsp").include(req,resp);
 

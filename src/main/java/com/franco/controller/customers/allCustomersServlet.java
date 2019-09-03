@@ -1,6 +1,7 @@
 package com.franco.controller.customers;
 
 import com.franco.Bean.CustomerBean;
+import com.franco.controller.baseServlet;
 import com.franco.models.Customer;
 
 import javax.servlet.ServletException;
@@ -13,9 +14,10 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 @WebServlet(name = "all-customers", urlPatterns = "/all-customers")
-public class allCustomersServlet extends HttpServlet {
+public class allCustomersServlet extends baseServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        validate(req,resp);
         try {
             ArrayList<Customer> customers = new CustomerBean().readAll();
             req.setAttribute("customers",customers);

@@ -2,6 +2,7 @@ package com.franco.controller.products;
 
 import com.franco.Bean.ProductBean;
 import com.franco.Bean.RecieveBean;
+import com.franco.controller.baseServlet;
 import com.franco.models.Product;
 import com.franco.models.Recievings;
 
@@ -15,10 +16,11 @@ import java.sql.SQLException;
 
 
 @WebServlet(name = "add-product", urlPatterns = "/add-product")
-public class addProductServlet extends HttpServlet {
+public class addProductServlet extends baseServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        validate(req,resp);
         req.getRequestDispatcher("/includes/navbar.jsp").include(req,resp);
         req.getRequestDispatcher("/views/products/addProduct.jsp").include(req,resp);
 
@@ -28,6 +30,7 @@ public class addProductServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        validate(req,resp);
             String name = req.getParameter("name");
             String description = req.getParameter("description");
             ProductBean productBean = new ProductBean();

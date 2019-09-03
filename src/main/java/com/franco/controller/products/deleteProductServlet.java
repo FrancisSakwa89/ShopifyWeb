@@ -1,6 +1,7 @@
 package com.franco.controller.products;
 
 import com.franco.Bean.ProductBean;
+import com.franco.controller.baseServlet;
 import com.franco.models.Product;
 
 import javax.servlet.ServletException;
@@ -13,9 +14,10 @@ import java.io.PrintWriter;
 import java.sql.SQLException;
 
 @WebServlet(name = "delete-product", urlPatterns = "/delete-product")
-public class deleteProductServlet extends HttpServlet {
+public class deleteProductServlet extends baseServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        validate(req,resp);
         int id = Integer.parseInt(req.getParameter("productId"));
         try {
             Product product = new ProductBean().read(id);
@@ -31,6 +33,7 @@ public class deleteProductServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        validate(req,resp);
         int productId = Integer.parseInt(req.getParameter("productId"));
         try {
             Product product = new ProductBean().read(productId);

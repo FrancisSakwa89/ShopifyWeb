@@ -2,6 +2,7 @@ package com.franco.controller.sale;
 
 
 import com.franco.Bean.SaleBean;
+import com.franco.controller.baseServlet;
 import com.franco.models.Sale;
 
 import javax.servlet.ServletException;
@@ -14,7 +15,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 @WebServlet(name = "all-sales", urlPatterns = "/all-sales")
-public class allSalesServlet extends HttpServlet {
+public class allSalesServlet extends baseServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
@@ -22,6 +23,7 @@ public class allSalesServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        validate(req,resp);
         try {
             ArrayList<Sale> sales = new SaleBean().readAll();
             req.setAttribute("sales",sales);

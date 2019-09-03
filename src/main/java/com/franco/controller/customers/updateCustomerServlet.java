@@ -2,6 +2,7 @@ package com.franco.controller.customers;
 
 import com.franco.Bean.CustomerBean;
 import com.franco.Bean.ProductBean;
+import com.franco.controller.baseServlet;
 import com.franco.models.Customer;
 
 import javax.servlet.ServletException;
@@ -14,9 +15,10 @@ import java.sql.SQLException;
 
 
 @WebServlet(name ="update-customer", urlPatterns = "/update-customer")
-public class updateCustomerServlet extends HttpServlet {
+public class updateCustomerServlet extends baseServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        validate(req,resp);
         int userId = Integer.parseInt(req.getParameter("userId"));
         try {
             Customer customer = new CustomerBean().read(userId);
@@ -31,6 +33,7 @@ public class updateCustomerServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        validate(req,resp);
         int userId = Integer.parseInt(req.getParameter("userId"));
         String customerName = req.getParameter("name");
         CustomerBean customerBean = new CustomerBean();

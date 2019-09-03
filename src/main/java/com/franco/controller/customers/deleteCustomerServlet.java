@@ -1,6 +1,7 @@
 package com.franco.controller.customers;
 
 import com.franco.Bean.CustomerBean;
+import com.franco.controller.baseServlet;
 import com.franco.models.Customer;
 
 import javax.servlet.ServletException;
@@ -12,9 +13,10 @@ import java.io.IOException;
 import java.sql.SQLException;
 
 @WebServlet(name ="delete-customer", urlPatterns = "/delete-customer")
-public class deleteCustomerServlet extends HttpServlet {
+public class deleteCustomerServlet extends baseServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        validate(req,resp);
         int userId = Integer.parseInt(req.getParameter("userId"));
         try {
             Customer customer = new CustomerBean().read(userId);
@@ -29,6 +31,7 @@ public class deleteCustomerServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        validate(req,resp);
         int userId = Integer.parseInt(req.getParameter("userId"));
         CustomerBean customerBean = new CustomerBean();
         try {

@@ -14,8 +14,10 @@ import java.sql.SQLException;
 public class Login extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.getRequestDispatcher("/includes/navbar.jsp").include(req,resp);
+        req.getRequestDispatcher("index.jsp").include(req,resp);
+        req.getRequestDispatcher("/includes/footer.html").include(req,resp);
 
-        req.getRequestDispatcher("index.jsp").forward(req,resp);
 
 
 
@@ -37,14 +39,14 @@ public class Login extends HttpServlet {
 
             }
 
-           else if (isLoggedIn(req)) {
-                // the user is already logged in and he's trying to login again
-                // then forward to the homepage
-                req.getRequestDispatcher("home.jsp").forward(req, resp);
-            }
+//           else if (isLoggedIn(req)) {
+//                // the user is already logged in and he's trying to login again
+//                // then forward to the homepage
+//                req.getRequestDispatcher("home.jsp").forward(req, resp);
+//            }
             else {
-                System.out.println("User with provided credentials doesn't exist....");
-                resp.sendRedirect("index.jsp");
+                req.setAttribute("message", "User doesn't exist");
+                req.getRequestDispatcher("index.jsp").forward(req,resp);
             }
 
         } catch (SQLException e) {

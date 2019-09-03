@@ -21,6 +21,15 @@
 
 </head>
 <body>
+<br><br><br>
+<%--<c:if(type != null){} --%>
+
+<%--</c:if>--%>
+
+<div class="alert alert-${type}" role="alert" style="margin-right: 50%;margin-left: 30%">
+    <p style='color:red;'>${message}</p>
+</div>
+<%--<h1>${message}</h1>--%>
 <h1 style="text-align: center">Hello, Please login</h1>
 <div class="container">
 

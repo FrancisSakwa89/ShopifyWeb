@@ -1,6 +1,7 @@
 package com.franco.controller.sale;
 
 import com.franco.Bean.*;
+import com.franco.controller.baseServlet;
 import com.franco.models.Customer;
 import com.franco.models.Recievings;
 import com.franco.models.Sale;
@@ -14,9 +15,10 @@ import java.io.IOException;
 import java.sql.SQLException;
 
 @WebServlet(name ="add-sale", urlPatterns = "/add-sale")
-public class addSaleServlet extends HttpServlet {
+public class addSaleServlet extends baseServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        validate(req,resp);
         req.getRequestDispatcher("/includes/navbar.jsp").include(req,resp);
         req.getRequestDispatcher("/views/sale/addSale.jsp").include(req, resp);
 
@@ -25,6 +27,7 @@ public class addSaleServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        validate(req,resp);
         int productId = Integer.parseInt(req.getParameter("productId"));
         int quantity = Integer.parseInt(req.getParameter("quantity"));
         int UserId = Integer.parseInt(req.getParameter("UserId"));

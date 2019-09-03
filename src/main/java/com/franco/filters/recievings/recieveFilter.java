@@ -19,9 +19,11 @@ public class recieveFilter implements Filter {
 //        HttpServletResponse resp = (HttpServletResponse) servletResponse;
 //        int id = Integer.parseInt(req.getParameter("id"));
 //        try{
-//            if (resp){
-//
-//            }
+////            if (resp){
+////
+////            }
+//        } catch (Exception e) {
+//            e.printStackTrace();
 //        }
 
 

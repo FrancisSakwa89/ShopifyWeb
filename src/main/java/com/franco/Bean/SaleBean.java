@@ -77,6 +77,10 @@ public class SaleBean implements BeanI <Sale>{
         prp.setString(6, sale.getCustomerName());
         prp.setDouble(7,sale.getTotalAmount());
 
+        recievings = new RecieveBean().read(sale.getProductId());
+        recievings.setRunningBalance(recievings.getQuantity() - sale.getQuantity());
+
+
         return prp.executeUpdate() > 0;
 
     }

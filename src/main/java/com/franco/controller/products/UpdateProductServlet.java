@@ -2,6 +2,7 @@ package com.franco.controller.products;
 
 
 import com.franco.Bean.ProductBean;
+import com.franco.controller.baseServlet;
 import com.franco.models.Product;
 
 import javax.servlet.ServletException;
@@ -13,10 +14,11 @@ import java.io.IOException;
 import java.sql.SQLException;
 
 @WebServlet(name ="update-product", urlPatterns = "/update-product")
-public class UpdateProductServlet extends HttpServlet {
+public class UpdateProductServlet extends baseServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        int id = Integer.parseInt(req.getParameter("productId"));
+        validate(req,resp);
+        int id = Integer.parseInt(req.getParameter("prod uctId"));
         try {
             Product product = new ProductBean().read(id);
             req.setAttribute("product",product);
@@ -31,6 +33,7 @@ public class UpdateProductServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        validate(req,resp);
         int ProductId = Integer.parseInt(req.getParameter("productId"));
         String productName = req.getParameter("name");
         String productDescription = req.getParameter("description");

@@ -1,6 +1,7 @@
 package com.franco.controller.recievings;
 
 import com.franco.Bean.RecieveBean;
+import com.franco.controller.baseServlet;
 import com.franco.models.Recievings;
 
 import javax.servlet.ServletException;
@@ -14,7 +15,7 @@ import java.util.ArrayList;
 
 
 @WebServlet(name = "all-recievings", urlPatterns = "/all-recievings")
-public class allRecievingsServlet  extends HttpServlet {
+public class allRecievingsServlet  extends baseServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -23,6 +24,7 @@ public class allRecievingsServlet  extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        validate(req,resp);
         try {
             ArrayList<Recievings> recievings = new RecieveBean().readAll();
             req.setAttribute("recievings",recievings);

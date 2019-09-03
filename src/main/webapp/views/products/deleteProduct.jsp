@@ -10,6 +10,7 @@
 <head>
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="./css/models.css">
+    <link rel="stylesheet" href="/js/alert.js">
     <link href ="./js/main.js"  rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -41,12 +42,43 @@
         </div>
 
 
-        <button class="btn btn-outline-danger" type="submit">Delete</button>
+        <button class="btn btn-outline-danger" type="submit"onclick="myAlertFunction(event)">Delete</button>
         <button class="btn btn-dark" type="reset">Reset</button>
 
     </form>
 </div>
+<script>
 
+
+    // function myAlertFunction(event) {
+    //     event.preventDefault()
+    //     swal({
+    //             title: "Remove book?",
+    //             text: "Watch out",
+    //             type: "warning",
+    //             showCancelButton: true,
+    //             confirmButtonColor: "#DD6B55",
+    //             confirmButtonText: "Yes.",
+    //             cancelButtonText: "No.",
+    //             closeOnConfirm: false,
+    //             closeOnCancel: false
+    //         },
+    //         function(isConfirm) {
+    //             if (isConfirm) {
+    //                 swal({
+    //                     title: "Deleted.",
+    //                     text: "Done.",
+    //                     type: "success"
+    //                 }, function() {
+    //                     $("#remove_book").submit();
+    //                 });
+    //             } else {
+    //                 swal("Cancelled", "Not done.", "error");
+    //             }
+    //         });
+    // }
+
+</script>
 <style>
     * { box-sizing:border-box; }
 

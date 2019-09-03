@@ -40,4 +40,15 @@ public class baseServlet extends HttpServlet {
         s.setAttribute("loggedIn", true);
 
     }
+
+    public void validate(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        if (req.getSession().getAttribute("username") == null){
+            req.setAttribute("err", "You have been logged out");
+            req.getRequestDispatcher("index.jsp").forward(req,resp);
+
+        }
+
+    }
+
+
 }

@@ -60,7 +60,7 @@
     </tbody>
 </table>
 <div style="margin-left: 30%">
-<a href="add-recieving" ><button class="btn btn-outline-success" type="submit">Add product</button></a>
+<a href="add-product" ><button class="btn btn-outline-success" type="submit">Add product</button></a>
 <a href="home.jsp"><button class="btn btn-outline-dark" type="reset">Back</button></a>
 </div>
 

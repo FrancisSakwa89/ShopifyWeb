@@ -19,6 +19,7 @@ import java.util.ArrayList;
 public class ViewAllProductsServlet extends baseServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        validate(req,resp);
         try {
             ArrayList<Product> products = new ProductBean().readAll();
             req.setAttribute("products",products);
