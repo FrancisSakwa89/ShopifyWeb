@@ -8,10 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="43c012b3-28fa-4cd9-8f20-775ef803ffeb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/franco/controller/accounts/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/franco/controller/accounts/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/franco/controller/products/ViewAllProductsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/franco/controller/products/ViewAllProductsServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/products/deleteProduct.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/products/deleteProduct.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopify.web.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopify.web.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/alert.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -252,10 +249,7 @@
               <item name="shopifyweb" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="franco" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="products" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shopifyweb" type="b2602c69:ProjectViewProjectNode" />
@@ -263,6 +257,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -412,7 +407,7 @@
       <workItem from="1567396277529" duration="14280000" />
       <workItem from="1567422404113" duration="21585000" />
       <workItem from="1567510882017" duration="3516000" />
-      <workItem from="1567569553849" duration="2571000" />
+      <workItem from="1567569553849" duration="2827000" />
     </task>
     <task id="LOCAL-00001" summary="A java 2EE web app using JBOSS(wildfly)">
       <created>1566991711727</created>
@@ -460,7 +455,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="185131000" />
+    <option name="totallyTimeSpent" value="185387000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="743" extended-state="6" />
