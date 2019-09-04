@@ -42,7 +42,7 @@
         </div>
 
 
-        <button class="btn btn-outline-danger" type="submit"onclick="myAlertFunction(event)">Delete</button>
+        <button class="btn btn-outline-danger" type="submit">Delete</button>
         <button class="btn btn-dark" type="reset">Reset</button>
 
     </form>
@@ -50,33 +50,13 @@
 <script>
 
 
-    // function myAlertFunction(event) {
-    //     event.preventDefault()
-    //     swal({
-    //             title: "Remove book?",
-    //             text: "Watch out",
-    //             type: "warning",
-    //             showCancelButton: true,
-    //             confirmButtonColor: "#DD6B55",
-    //             confirmButtonText: "Yes.",
-    //             cancelButtonText: "No.",
-    //             closeOnConfirm: false,
-    //             closeOnCancel: false
-    //         },
-    //         function(isConfirm) {
-    //             if (isConfirm) {
-    //                 swal({
-    //                     title: "Deleted.",
-    //                     text: "Done.",
-    //                     type: "success"
-    //                 }, function() {
-    //                     $("#remove_book").submit();
-    //                 });
-    //             } else {
-    //                 swal("Cancelled", "Not done.", "error");
-    //             }
-    //         });
-    // }
+    function checkIt() {
+        if (confirm('Are you really sure you want to delete this product?')) {
+            delete-product.submit();
+        }else {
+            return "all-products";
+        }
+    }
 
 </script>
 <style>

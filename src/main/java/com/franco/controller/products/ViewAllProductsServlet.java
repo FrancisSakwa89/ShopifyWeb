@@ -24,7 +24,7 @@ public class ViewAllProductsServlet extends baseServlet {
             ArrayList<Product> products = new ProductBean().readAll();
             req.setAttribute("products",products);
             req.getRequestDispatcher("/includes/navbar.jsp").include(req,resp);
-            req.getRequestDispatcher("views/products/products.jsp").include(req,resp);
+            req.getRequestDispatcher("/views/products/products.jsp").include(req,resp);
             req.getRequestDispatcher("/includes/footer.html").include(req,resp);
 
 
