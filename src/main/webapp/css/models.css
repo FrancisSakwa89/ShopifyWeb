@@ -1,7 +1,7 @@
-* { box-sizing:border-box; }
+/** { box-sizing:border-box; }*/
 
-/* basic stylings ------------------------------------------ */
-body 				 { background:url(https://scotch.io/wp-content/uploads/2014/07/61.jpg); }
+/*!* basic stylings ------------------------------------------ *!*/
+/*body 				 { background:url(https://scotch.io/wp-content/uploads/2014/07/61.jpg); }*/
 .container 		{
     font-family:'Roboto';
     width:600px;
@@ -9,20 +9,21 @@ body 				 { background:url(https://scotch.io/wp-content/uploads/2014/07/61.jpg);
     display:block;
     background:#FFF;
     padding:10px 50px 50px;
+    box-sizing: border-box;
 }
 h2 		 {
     text-align:center;
-    margin-bottom:50px;
+    margin-bottom:100px;
 }
-h2 small {
-    font-weight:normal;
-    color:#888;
-    display:block;
-}
-.footer 	{ text-align:center; }
-.footer a  { color:#53B2C8; }
+/*h2 small {*/
+/*    font-weight:normal;*/
+/*    color:#888;*/
+/*    display:block;*/
+/*}*/
+/*.footer 	{ text-align:center; }*/
+/*.footer a  { color:#53B2C8; }*/
 
-/* form starting stylings ------------------------------- */
+/*!* form starting stylings ------------------------------- *!*/
 .group 			  {
     position:relative;
     margin-bottom:45px;

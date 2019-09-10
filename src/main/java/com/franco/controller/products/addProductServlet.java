@@ -21,8 +21,8 @@ public class addProductServlet extends baseServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         validate(req,resp);
-        req.getRequestDispatcher("/includes/navbar.jsp").include(req,resp);
-        req.getRequestDispatcher("/views/products/addProduct.jsp").include(req,resp);
+        req.getRequestDispatcher("/views/products/addProduct.jsp").forward(req,resp);
+//        throw new RuntimeException("test exception");
 
     }
 

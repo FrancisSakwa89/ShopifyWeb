@@ -18,7 +18,7 @@ public class UpdateProductServlet extends baseServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         validate(req,resp);
-        int id = Integer.parseInt(req.getParameter("prod uctId"));
+        int id = Integer.parseInt(req.getParameter("productId"));
         try {
             Product product = new ProductBean().read(id);
             req.setAttribute("product",product);

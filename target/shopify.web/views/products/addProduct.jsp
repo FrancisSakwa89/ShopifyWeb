@@ -1,6 +1,10 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <%@include file="/includes/navbar.jsp"%>
     <meta charset="UTF-8">
     <title>Add Product</title>
     <link rel="stylesheet" href="/css/styles.css">

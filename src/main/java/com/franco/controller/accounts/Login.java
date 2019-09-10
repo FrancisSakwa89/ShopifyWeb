@@ -33,7 +33,7 @@ public class Login extends HttpServlet {
             if(user.getPassword().equalsIgnoreCase(password)){
                 auth(req);
                 HttpSession s = req.getSession();
-                s.setAttribute("username",user);
+                s.setAttribute("username",user);s.setMaxInactiveInterval(5*60);
                 resp.sendRedirect("home.jsp");
 
 

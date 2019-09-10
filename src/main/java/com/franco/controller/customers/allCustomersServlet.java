@@ -20,6 +20,8 @@ public class allCustomersServlet extends baseServlet {
         validate(req,resp);
         try {
             ArrayList<Customer> customers = new CustomerBean().readAll();
+            resp.setHeader("Pragma","no-cache");
+            resp.setHeader("Expires","0");
             req.setAttribute("customers",customers);
             req.getRequestDispatcher("/includes/navbar.jsp").include(req,resp);
             req.getRequestDispatcher("views/customers/allCustomers.jsp").include(req,resp);

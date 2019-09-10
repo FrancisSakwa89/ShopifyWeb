@@ -1,3 +1,4 @@
+<%@ page import="java.util.Calendar" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
@@ -17,7 +18,7 @@
 <body>
 
 <%
-    out.println("__________________scripltletTags_________________________");
+    out.println("scripltletTags printed");
     %>
     <%! int divide(){
         int a = 25;
@@ -32,16 +33,23 @@
 divide()
 
 %>
-<%--<c:catch--%>
-<%--var="nducgwe">--%>
-<%--    <% int c = divide();%>--%>
-<%--    <c:out value="ndugwe">--%>
-<%--        c--%>
-<%--    </c:out>--%>
-<%--</c:catch>--%>
-<%--<%!--%>
-<%--Francis sakwa;--%>
-<%--%>--%>
+<% out.print("Today is:"+java.util.Calendar.getInstance().getTime()); %>
+
+<c:set value="<%= Calendar.getInstance().get(Calendar.SECOND)%>" var="seconds"/>
+<c:choose>
+    <c:when test="${seconds le 30 }">
+        <c:out value="${seconds} is less than 30"/>
+    </c:when>
+    <c:when test="${seconds eq 30 }">
+        <c:out value="${seconds} is equal to 30"/>
+    </c:when>
+    <c:otherwise>
+        <c:out value="${seconds} is greater than 30"/>
+    </c:otherwise>
+</c:choose>
+
+
+
 </body>
 </body>
 </body>

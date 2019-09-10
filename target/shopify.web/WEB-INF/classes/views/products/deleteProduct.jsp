@@ -50,13 +50,6 @@
 <script>
 
 
-    function checkIt() {
-        if (confirm('Are you really sure you want to delete this product?')) {
-            delete-product.submit();
-        }else {
-            return "all-products";
-        }
-    }
 
 </script>
 <style>

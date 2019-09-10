@@ -1,3 +1,5 @@
+<%@ taglib prefix="f" uri="http://java.sun.com/jstl/fmt" %>
+<%@ taglib prefix="h" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%--
   Created by IntelliJ IDEA.
   User: moringaschool

@@ -9,9 +9,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <%@include file="includes/navbar.jsp" %>
     <title>Login</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/models.css">
+<%--    <link rel="stylesheet" href="./css/styles.css">--%>
+    <link rel="stylesheet" href="css/models.css">
     <link href ="./js/main.js"  rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -67,7 +68,7 @@
     .container 		{
         font-family:'Roboto';
         width:600px;
-        margin:30px auto 0;
+        margin:50px auto 0;
         display:block;
         background:#FFF;
         padding:10px 50px 50px;
